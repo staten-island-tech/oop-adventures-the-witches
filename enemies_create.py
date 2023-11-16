@@ -4,12 +4,14 @@ import os
 ##Class for enemies:
 
 class ENEMIES:
-    def __init__(self, height, power, strength, attack_moves, appearance):
+    def __init__(self, height, power, strength, attack_moves, appearance, personality, health):
         self.height = height
         self.power = power
         self.strength = strength
         self.attack_moves = attack_moves
         self.appearance = appearance
+        self.personality = personality
+        self.health = health
 
 with open ("data.json", "r") as f:
     # Serialize the updated Python list to a JSON string
@@ -21,3 +23,22 @@ with open ("data.json", "r") as f:
     attack_moves = input ("Name the attack moves your enemy can do: ")
     appearance = input ("Name significant physical appearances of your enemy: ")
     personality = input ("Name your enemy's personality: ")
+    health = input ("Name your enemy's health")
+
+villains = ENEMIES(height, power, strength, attack_moves, appearance, personality, health)
+data.append(villains.__dict__)
+print (villains.__dict__)
+
+#No code needed below this line
+# Creates a new JSON file with the updated data
+new_file = "updated.json"
+with open(new_file, "w") as f:
+    # Serialize the updated Python list to a JSON string
+    json_string = json.dumps(data, indent = 5)
+
+    # Write the JSON string to the new JSON file
+    f.write(json_string)
+
+# Overwrite the old JSON file with the new one
+os.remove("data.json")
+os.rename(new_file, "data.json")
