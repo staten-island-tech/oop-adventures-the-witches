@@ -1,10 +1,11 @@
 import json
 import os
 
-##Class for enemies:
+#Class for enemies:
 
 class ENEMIES:
-    def __init__(self, height, power, strength, attack_moves, appearance, personality, health):
+    def __init__(self, name, height, power, strength, attack_moves, appearance, personality, health):
+        self.name = name
         self.height = height
         self.power = power
         self.strength = strength
@@ -17,15 +18,16 @@ with open ("data.json", "r") as f:
     # Serialize the updated Python list to a JSON string
     data = json.load(f)
     ##Call classes in here
+    name = input ("Who is the enemy? ")
     height = input ("Name an enemy's height: ")
-    power = input ("Name your enemy's power element: ")
+    power = input ("Name your enemy's power/element: ")
     strength = input ("Name your enemy's physical strength level: ")
     attack_moves = input ("Name the attack moves your enemy can do: ")
     appearance = input ("Name significant physical appearances of your enemy: ")
     personality = input ("Name your enemy's personality: ")
-    health = input ("Name your enemy's health")
+    health = input ("Name your enemy's health: ")
 
-villains = ENEMIES(height, power, strength, attack_moves, appearance, personality, health)
+villains = ENEMIES(name, height, power, strength, attack_moves, appearance, personality, health)
 data.append(villains.__dict__)
 print (villains.__dict__)
 
