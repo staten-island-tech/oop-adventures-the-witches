@@ -66,5 +66,41 @@
   {
     "name": "Staff of Flames",
     "desc": "A peculiar stick which summons flames and embers"
+  },
+  {
+    "name": "Tommy Gun",
+    "desc": "An automatic gun. Has 10 uses."
+  },
+  {
+    "name": "Frying Pan",
+    "desc": "An ordinary pan used for cooking."
+  },
+  {
+    "name": "Crossbow",
+    "desc": "A heavy bow that deals heavy damage."
+  },
+  {
+    "name": "Heavy Stick",
+    "desc": "A large branch cut from an oak tree."
+  },
+  {
+    "name": "Flashbang",
+    "desc": "Temporarily stuns the enemy for a turn. Ineffective on the Witch."
+  },
+  {
+    "name": "Healh Potion",
+    "desc": "Restores HP. Heals x2 of current HP."
+  },
+  {
+    "name": "Strength Potion",
+    "desc": "Deal 1.5x your damage for 4 turns."
+  },
+  {
+    "name": "Shield Potion",
+    "desc": "Grants a shield. User is invulnerable for 1 turn."
+  },
+  {
+    "name": "Shriveled Pepper",
+    "desc": "Upon consumption, make the Ice Dragon do 1.5x more damage."
   }
 ]

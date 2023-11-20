@@ -1,8 +1,6 @@
 import json
 import os
 
-#Class for enemies:
-
 class weapon_items:
     def __init__(self, name, desc):
         self.name = name
