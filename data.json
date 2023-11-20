@@ -5,7 +5,7 @@
           "power": "Gardening",
           "strength": "2",
           "attack_moves": " ",
-          "appearance": "A bearded man with a pointed hat.",
+          "appearance": "A short-tempered, bearded man with a pointed hat. Be careful to not solve his puzzles incorrectly!",
           "personality": "intelligent, curious",
           "health": "250"
      },
@@ -15,7 +15,7 @@
           "power": "Trickery",
           "strength": "2.5",
           "attack_moves": " ",
-          "appearance": "A green creature with pointed ears and a mischievous grin. ",
+          "appearance": "A green creature with pointed ears and a mischievous grin.  ",
           "personality": "reckless, silly",
           "health": "325"
      },
@@ -25,7 +25,7 @@
           "power": "Stealth",
           "strength": "3",
           "attack_moves": " ",
-          "appearance": "A seemingly ordinary human who blends in.",
+          "appearance": "A seemingly ordinary human who blends in...",
           "personality": "sneaky, violent",
           "health": "375"
      },
@@ -55,7 +55,7 @@
           "power": "Dark magic",
           "strength": "10",
           "attack_moves": " ",
-          "appearance": "A young, mysterious woman surrounded by a dark aura, wearing purple attire with a black cape and hat. ",
+          "appearance": "A mysterious lady surrounded by a dark, mysterious aura, wearing purple attire with a black cape and hat. ",
           "personality": "cruel, intelligent",
           "health": "10000"
      }
