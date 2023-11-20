@@ -1,47 +1,30 @@
 import json
 import os
-## Create Class for creating new dictionaries here
 
-class Character:
-    def __init__(self, name, level, vision, weapon):
+#Class for enemies:
+
+class weapon_items:
+    def __init__(self, name, desc):
         self.name = name
-        self.level = level
-        self.vision = vision
-        self.weapon = weapon
+        self.desc = desc
 
-with open("data.json", "r") as f:
+with open ("data.json", "r") as f:
     # Serialize the updated Python list to a JSON string
     data = json.load(f)
     ##Call classes in here
+    name = input ("name: ")
+    desc = input ("short desc: ")
 
-a = input('name: ')
-b = input('level: ')
-c = input('vision: ')
-d = input('weapon: ')
-
-class f:
-    def __init__(self, filename):
-        self.filename = filename
-
-        if not os.path.exists(self.filename):
-            with open(self.filename, 'w') as file:
-                json.dump([], file)
-                
-data.append({
-            'name': a,
-            'level': b,
-            'vision': c,
-            'weapon': d
-        })
-
-
+shop = weapon_items(name,desc)
+data.append(shop.__dict__)
+print (shop.__dict__)
 
 #No code needed below this line
 # Creates a new JSON file with the updated data
 new_file = "updated.json"
 with open(new_file, "w") as f:
     # Serialize the updated Python list to a JSON string
-    json_string = json.dumps(data)
+    json_string = json.dumps(data, indent = 2)
 
     # Write the JSON string to the new JSON file
     f.write(json_string)
