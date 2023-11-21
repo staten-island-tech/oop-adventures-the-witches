@@ -5,7 +5,7 @@
           "power": "Gardening",
           "strength": "2",
           "attack_moves": " ",
-          "appearance": "A short-tempered, bearded man with a pointed hat. Be careful to not solve his puzzles incorrectly!",
+          "desc": "A short-tempered, bearded man with a pointed hat. Be careful to not solve his puzzles incorrectly!",
           "personality": "intelligent, curious",
           "health": "250"
      },
@@ -15,7 +15,7 @@
           "power": "Trickery",
           "strength": "2.5",
           "attack_moves": " ",
-          "appearance": "A green creature with pointed ears and a mischievous grin.  ",
+          "desc": "A green creature with pointed ears and a mischievous grin.  ",
           "personality": "reckless, silly",
           "health": "325"
      },
@@ -25,7 +25,7 @@
           "power": "Stealth",
           "strength": "3",
           "attack_moves": " ",
-          "appearance": "A seemingly ordinary human who blends in...",
+          "desc": "A seemingly ordinary human who blends in...",
           "personality": "sneaky, violent",
           "health": "375"
      },
@@ -35,7 +35,7 @@
           "power": "Brute force",
           "strength": "4",
           "attack_moves": " ",
-          "appearance": "A very large, human-like being capable of destruction.",
+          "desc": "A very large, human-like being capable of destruction.",
           "personality": "reckless, unintelligent",
           "health": "400"
      },
@@ -45,7 +45,7 @@
           "power": "Ice",
           "strength": "7.5",
           "attack_moves": " ",
-          "appearance": "A large, blue bat-winged lizard with icicle-like structures hanging from its body.",
+          "desc": "A large, blue bat-winged lizard with icicle-like structures hanging from its body.",
           "personality": "over-protective, loyal",
           "health": "1000"
      },
@@ -55,7 +55,7 @@
           "power": "Dark magic",
           "strength": "10",
           "attack_moves": " ",
-          "appearance": "A mysterious lady surrounded by a dark, mysterious aura, wearing purple attire with a black cape and hat. ",
+          "desc": "A mysterious lady surrounded by a dark, mysterious aura, wearing purple attire with a black cape and hat. ",
           "personality": "cruel, intelligent",
           "health": "10000"
      }
