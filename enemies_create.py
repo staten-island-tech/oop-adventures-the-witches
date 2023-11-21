@@ -2,7 +2,6 @@ import json
 import os
 
 #Class for enemies:
-
 class ENEMIES:
     def __init__(self, name, height, power, strength, attack_moves, desc, personality, health):
         self.name = name

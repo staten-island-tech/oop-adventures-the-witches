@@ -16,6 +16,7 @@ def allenemiesSEARCH():
             everything = (list(data[i].values())) # all values in data
             if enemy == (everything[0]):
                 print (f"{everything[0]}: {everything[5]}")
+                print (f"Power: {everything[2]}")
     elif search == ("stats"):
         enemy = input ("Search for an enemy: ")
         for i in range (6):
