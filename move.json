@@ -1,1 +1,18 @@
-[]
+[
+  {
+    "move": "Strike",
+    "desc": "Hit the enemy with your normal strength"
+  },
+  {
+    "move": "Plunge",
+    "desc": "Charge at the enemy more fiercely"
+  },
+  {
+    "move": "Dodge",
+    "desc": "Avoid getting hurt. Works half of the time."
+  },
+  {
+    "move": "Use item",
+    "desc": "Pick an item to use. After usage of item, skips your turn."
+  }
+]

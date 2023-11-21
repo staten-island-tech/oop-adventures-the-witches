@@ -6,7 +6,7 @@ class weapon_items:
         self.name = name
         self.desc = desc
 
-with open ("data.json", "r") as f:
+with open ("item.json", "r") as f:
     # Serialize the updated Python list to a JSON string
     data = json.load(f)
     ##Call classes in here
@@ -20,7 +20,7 @@ print (shop.__dict__)
 #No code needed below this line
 # Creates a new JSON file with the updated data
 new_file = "updated.json"
-with open(new_file, "w") as f:
+with open(new_file, "s") as f:
     # Serialize the updated Python list to a JSON string
     json_string = json.dumps(data, indent = 2)
 
@@ -28,5 +28,5 @@ with open(new_file, "w") as f:
     f.write(json_string)
 
 # Overwrite the old JSON file with the new one
-os.remove("data.json")
-os.rename(new_file, "data.json")
+os.remove("item.json")
+os.rename(new_file, "item.json")
