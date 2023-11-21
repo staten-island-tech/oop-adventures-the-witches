@@ -10,16 +10,34 @@ def Witch() :
            Quest =input("You head up the path to Wickery Hills. However you dont seem to remember this path. Go back?")
           
             
-           if Quest == "Yes" :
+           if Quest == "yes" :
                Quest2 = input("Wait...This isn't the way I came from....You suddenly begin to panic knowing that you are lost. *Sound of leaves rustling.* 'Who's There?!'You ask. Would you like to investigate the noise?")
 
-           if Quest2 == "Yes" :
+           if Quest2 == "yes" :
                 Quest3 = input("You begin to approach the bushes. Yon see something shiny... Its... A Dangerous Forest Gnome ?!(Preparing for battle......) To defeat the gnome you must answer one of his tricky riddles !!(Caps sensitive)PAPA FOREST GNOME : What is seen in the middle of March and April that can't be seen at the beginning or end of either month?")
            if Quest3 == "r" :
-               print("(GNOME DEFEATED!!!)Specimen Collected !! ()")
+               
+               print("(GNOME DEFEATED!!!)Specimen Collected !!")
+               print("Specimen Collected !!")
+               print("LEVEL UP !! Lvl. 0 --> Lvl.1")
+               print("Whew... That was super scary !! You begin to continue back down the path. *I hope I dont come across another gnome !*")
+               Quest4 = input("You Finally Arrive At Home !!")
+        #############################################################################################
            else: 
-                print("GAME OVER! PAPA GNOME: 'KIDS!!! WE'RE EATING GOOD TONIGHT !! HOUGHHOUGHHOUGH!!")
+                print("Wrong Answer !")
+                print("PAPA GNOME: 'KIDS!!! WE'RE EATING GOOD TONIGHT !! HOUGHHOUGHHOUGH!!")
+                print("GAME OVER!")
                 print("Try Again?")
+                print("Run Terminal To Try again !!")
+        #############################################################################################
+                   
+
+           ####################
+           if Quest== "no" :
+                print("Hmm. my mind seems to be wanting to play tricks on me. I'm really tired. *You continue down the rainy path.*")
+        
+            
+           ##################
                               
         
 
@@ -30,8 +48,7 @@ def Witch() :
         input("You head across the bridge to Crystal cliffs. (Its such an effort to live so far and isolated away from the village. ) As it soon starts to get dark, You decide to walk faster. The thought of being in the woods this late unsettles you. You finally approach home. Would you like to shower or go to bed?")
 
 ###########################################################################################################################################################
-        if Quest== "No" :
-                print("Hmm. my mind seems to be wanting to play tricks on me. I'm really tired. *You continue down the rainy path.*")
+        
 
 Witch()
 
