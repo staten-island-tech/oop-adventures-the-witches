@@ -11,9 +11,15 @@ with open ("data.json", "r") as f:
     data = json.load(f)
     ##Call classes in here
     name = input ("name: ")
+<<<<<<< Updated upstream
     desc = input ("short desc: ")
 
 shop = weapon_items(name,desc)
+=======
+    desc = input ("quick desc: ")
+
+shop = weapon_items(name, desc)
+>>>>>>> Stashed changes
 data.append(shop.__dict__)
 print (shop.__dict__)
 
