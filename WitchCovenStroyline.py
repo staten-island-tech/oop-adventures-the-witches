@@ -3,6 +3,7 @@ print("Click Terminal Box To Start")
 
 
 def Witch() :
+  
 
     # IF YOU WENT LEFT
     ChoiceOne = input("Witch Coven Adventure. It was a dark stormy evening. As a young maiden you have just finished work. Tired and annoyed of the rich family you work for, you slowly head down the wet path leading up to the hill. *You see a sign that reads* ""Left: Wickery Hills"", ""Right: ""Crystal Cliffs"". Which way do you go?")
@@ -11,10 +12,10 @@ def Witch() :
           
             
            if Quest == "yes" :
-               Quest2 = input("Wait...This isn't the way I came from....You suddenly begin to panic knowing that you are lost. *Sound of leaves rustling.* 'Who's There?!'You ask. Would you like to investigate the noise?")
+               Quest2 = input("Wait...This isn't the way I came from.... *Sound of leaves rustling.* Would you like to investigate the noise?")
 
            if Quest2 == "yes" :
-                Quest3 = input("You begin to approach the bushes. Yon see something shiny... Its... A Dangerous Forest Gnome ?!(Preparing for battle......) To defeat the gnome you must answer one of his tricky riddles !!(Caps sensitive)PAPA FOREST GNOME : What is seen in the middle of March and April that can't be seen at the beginning or end of either month?")
+                Quest3 = input("You begin to approach the bushes. (lvl.1 FOREST GNOME DISCORVERED.) The gnome agrees to let you go if you answer his 'tricky' Riddles. (Caps sensitive) PAPA FOREST GNOME : What is seen in the middle of March and April that can't be seen at the beginning or end of either month?")
            if Quest3 == "r" :
                
                print("(GNOME DEFEATED!!!)Specimen Collected !!")
@@ -30,6 +31,7 @@ def Witch() :
                 print("Try Again?")
                 print("Run Terminal To Try again !!")
         #############################################################################################
+
                    
 
            ####################
