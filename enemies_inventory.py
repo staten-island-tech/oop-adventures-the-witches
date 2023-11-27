@@ -10,25 +10,20 @@ def allenemiesEncounters():
 allenemiesEncounters()
 
 def allenemiesSEARCH():
-    #Organizes inputs: makes sure the input is one of the listed enemies before continuing.
-    for i in range (6):
-        everything = (list(data[i].values()))
-    enemy = input("Search for an enemy: ")
-    if enemy == everything[0]:
-        pass
-    else:
-        print ("No such enemy.")
-        return
-    
-    search = input("What do you wish to search for? (Enemy Description, Enemy Stats, Enemy Moves): ")
-   
+    #User input for enemy
+    enemy = input ("Which enemy do you wish to know more about? ")
+
+
    #Searches description of enemies
+    search = input("What do you wish to search for? (Enemy Description, Enemy Stats, Enemy Moves): ")
     if search == ("desc"): 
         for i in range (6):
             everything = (list(data[i].values())) # all values in data
             if enemy == (everything[0]):
                 print (f"{everything[0]}: {everything[5]}")
                 print (f"Power: {everything[2]}")
+            else:
+                print ("No such enemy and/or search value.")
 
     #Searches stats of enemies
     elif search == ("stats"):
@@ -36,16 +31,18 @@ def allenemiesSEARCH():
             everything = (list(data[i].values())) # all values in data
             if enemy == (everything[0]):
                 print (f"{everything[0]}: Strength: {everything[3]}/10, Health: {everything[-1]}")
-    
+            else:
+                print ("No such enemy and/or search value.")   
     #Searches moves of enemies
     elif search == ("moves"):
         for i in range (6):
             everything = (list(data[i].values())) # all values in data
             if enemy == (everything[0]):
                 print (f"{everything[0]}: {everything[4]}")
-
+            else:
+                print ("No such enemy and/or search value.")
 
     else:
-        print ("No such search value.")
+        print ("No such enemy and/or search value.")
 
 allenemiesSEARCH()
