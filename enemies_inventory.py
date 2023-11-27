@@ -22,26 +22,26 @@ def allenemiesSEARCH():
             if enemy == (everything[0]):
                 print (f"{everything[0]}: {everything[5]}")
                 print (f"Power: {everything[2]}")
-            else:
-                print ("No such enemy and/or search value.")
-
+        if enemy != (everything[0]):
+            print ("No such enemy.")
+            
     #Searches stats of enemies
     elif search == ("stats"):
         for i in range (6):
             everything = (list(data[i].values())) # all values in data
             if enemy == (everything[0]):
-                print (f"{everything[0]}: Strength: {everything[3]}/10, Health: {everything[-1]}")
-            else:
-                print ("No such enemy and/or search value.")   
+                print (f"{everything[0]}: Strength: {everything[3]}/10, Health: {everything[-1]}")  
+        if enemy != (everything[0]):
+            print ("No such enemy.")    
+    
     #Searches moves of enemies
     elif search == ("moves"):
         for i in range (6):
             everything = (list(data[i].values())) # all values in data
             if enemy == (everything[0]):
                 print (f"{everything[0]}: {everything[4]}")
-            else:
-                print ("No such enemy and/or search value.")
-
+        if enemy != (everything[0]):
+            print ("No such enemy.")
     else:
         print ("No such enemy and/or search value.")
 
