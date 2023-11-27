@@ -10,10 +10,9 @@ match_found = False
 
 #iterating
 for move in data:
-    if move["move"].lower() == user_input.lower():
+    if move["move","desc"].lower() == user_input.lower():
         match_found = True
         print(f"Move found: {move['move']} - {move['desc']}")
-        
 
 #checking
 if not match_found:
