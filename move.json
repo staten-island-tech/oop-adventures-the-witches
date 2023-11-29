@@ -14,5 +14,29 @@
   {
     "move": "Use item",
     "desc": "Pick an item to use. After usage of item, skips your turn."
+  },
+  {
+    "move": "Cane Beating",
+    "desc": "Gnome's attack. Deals 75 HP."
+  },
+  {
+    "move": "Shadow Attack",
+    "desc": "Goblin's attack. Ambush and claw the opponent dealing 100 HP."
+  },
+  {
+    "move": "Stabbing Wound",
+    "desc": "Bandit's attack. Swiftly stab the opponent dealing 125 HP."
+  },
+  {
+    "move": "Mega Punch",
+    "desc": "Ogre's attack. Punch the enemy hard for 175 HP."
+  },
+  {
+    "move": "Chilling Breath",
+    "desc": "Ice Dragon's attack. Summons an avalanche of icicles onto the opponent for 700 HP. (If Shriveled Pepper is consumed, this attack deals 1,050 HP for the remainder of the round.)"
+  },
+  {
+    "move": "Fire Tornado",
+    "desc": "Staff of Flames ability. Summons a tornado of fire to the enemy. Deals 800 HP."
   }
 ]
