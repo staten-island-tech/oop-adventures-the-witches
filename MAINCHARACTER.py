@@ -13,12 +13,12 @@ class Maincharacter:
         self.inventory.append(items)
         print ("Hooray, you got more items!")
         newhealth = self.health + 1,000
-        self.health.replace(newhealth)
+        self.health.replace(self.health, newhealth)
         print (f"Your new health is {newhealth}")
     def defeat(self):
         print ("Nooo, you didn't defeat the enemy!")
         newhealth = self.health - 500
-        self.health.replace(newhealth)
+        self.health.replace(self.health, newhealth)
         print (f"Your new health is {newhealth}")
     def newweapon(self, items):
         weapon = input(f"Whats this? Theres a new weapon! Do you wish to pick up {items}? ")
