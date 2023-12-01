@@ -5,4 +5,4 @@ Vincent = Seller("Vincent",["FOREST GUMP","GOODLUCK CHARM", "DRAGON FOOD","EMERA
 Tillary = Townfolk("Tillary","Maid","No")
 item = Vincent.sell("EMERALD")
 print(item)
-Tillary.sell(item)
+Tillary.buy(item)
