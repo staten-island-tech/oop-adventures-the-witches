@@ -1,0 +1,13 @@
+
+from SHOP import seller
+class Townfolk() :
+    def __init__ (self,Name,Occupation,Are_They_A_Friend,Inventory) :
+        self.Name = Name
+        self.Occupation = Occupation
+        self.Are_They_A_Friend = Are_They_A_Friend
+        self.Inventory = Inventory
+        
+
+
+
+        
