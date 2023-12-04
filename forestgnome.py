@@ -22,4 +22,3 @@ class Forestgnome:
         elif self.health > 0:
             print (f"{self.name} won the battle!")
             print (f"{self.name}: Haha, I knew I would win!!")
-    
