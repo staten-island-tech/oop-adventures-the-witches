@@ -1,7 +1,4 @@
-##from hero import hero
-##from enemy import enemy
-enemy_hp = 69
-mc_hp = 420
+
 
 class battle:
     def __init__(self, name, opponent, weapon, move, hp, enemy_hp):
@@ -11,8 +8,9 @@ class battle:
         self.move = move
         self.hp = hp
         self.enempy_hp = enemy_hp
+
 ##initiating battle
-print("Encountered wild"{enemy}", engage in battle? (Y/N)")
+print("Encountered wild o, engage in battle? (Y/N)")
 #put hero class when its done
 if input == "Y":
     print("Engaging into battle")
@@ -20,15 +18,26 @@ elif input == "N":
     print("Ran away successfully")
 else:
     print("invalid")
+
+#what u do in turns       
+print("What would you like to do? Fight/Use items")
+if input == "Fight":
+    print("Select a move:" )
+elif input == "Use items":
+    print("Select item you want to be used: ")
+else: 
+    print("invalid")
+    
 ##turns
-for i in range(100):
-    def fight(self, attack, enemy_attack):
-        self.enemy_hp.append(enemy_attack)
-        print(self.enemy_hp)
-        self.hp.append(attack)
-        print(self.hp)
-if enemy_hp <= 0:
-    print("You won")
-elif mc_hp <= 0:
-    print("You lost")
+    
+
+
+        
+
+
+##if enemy.hp <= 0:
+    ##print("You won")
+##elif hero.hp <= 0:
+    ##print("You lost")
+
 
