@@ -1,21 +1,19 @@
-print("Welcome to The Witch Coven Adventure (CAPS SENSITIVE)!!! By (Nina, Hali and Serena C.)")
-print("Click Terminal Box To Start")
 
 
 def Witch() :
   
 
     # IF YOU WENT LEFT
-    ChoiceOne = input("Witch Coven Adventure. It was a dark stormy evening. As a young maiden you have just finished work. Tired and annoyed of the rich family you work for, you slowly head down the wet path leading up to the hill. *You see a sign that reads* ""Left: Wickery Hills"", ""Right: ""Crystal Cliffs"". Which way do you go?")
+    ChoiceOne = input("It was a dark stormy evening. As a young maiden you have just finished work. Tired and annoyed of the rich family you work for, you slowly head down the wet path leading up to the hill. *You see a sign that reads* ""Left: Wickery Hills"", ""Right: ""Crystal Cliffs"". Which way do you go?")
     if ChoiceOne == "left" :
-           Quest =input("You head up the path to Wickery Hills. However you dont seem to remember this path. Go back?")
+           LeftPath =input("You head up the path to Wickery Hills. However you dont seem to remember this path. Go back?")
           
             
-           if Quest == "yes" :
-               Quest2 = input("Wait...This isn't the way I came from.... *Sound of leaves rustling.* Would you like to investigate the noise?")
+           if LeftPath == "yes" :
+               Investigate= input("Wait...This isn't the way I came from.... *Sound of leaves rustling.* Would you like to investigate the noise?")
 
-           if Quest2 == "yes" :
-                Quest3 = input("You begin to approach the bushes. (lvl.1 FOREST GNOME DISCORVERED.) The gnome agrees to let you go if you answer his 'tricky' Riddles. (Caps sensitive) PAPA FOREST GNOME : What is seen in the middle of March and April that can't be seen at the beginning or end of either month?")
+           if Investigate == "yes" :
+                Quest3 = input("You begin to approach the bushes. (lvl.1 FOREST GNOME DISCORVERED.) The gnome agrees to let you go if you answer his 'VERY  tricky' Riddles. (Caps sensitive) PAPA FOREST GNOME : What is seen in the middle of March and April that can't be seen at the beginning or end of either month?")
            if Quest3 == "r" :
                
                print("(GNOME DEFEATED!!!)Specimen Collected !!")
@@ -28,18 +26,19 @@ def Witch() :
                 print("Wrong Answer !")
                 print("PAPA GNOME: 'KIDS!!! WE'RE EATING GOOD TONIGHT !! HOUGHHOUGHHOUGH!!")
                 print("GAME OVER!")
-                print("Try Again?")
                 print("Run Terminal To Try again !!")
         #############################################################################################
 
                    
 
            ####################
-           if Quest== "no" :
+           if LeftPath== "no" :
                 print("Hmm. my mind seems to be wanting to play tricks on me. I'm really tired. *You continue down the rainy path.*")
+                Home = input("You finally arrive home. Would you like to shower?")
+                
         
             
-           ##################
+           ##############################
                               
         
 
