@@ -6,9 +6,10 @@ class Bandit:
         self.weapon = weapon
         self.inventorySTEAL = inventorySTEAL
         self.inventory = inventory
-    def sneaky(self, MCitems, MCinventorybefore, MCinventoryafter): #MCinventoryafter does not have MCitems
+    def sneaky(self, MCitems, MCinventorybefore, MCinventoryafter): #'MCinventoryafter' does not include 'MCitems'
         print ("Whats that sound? I thought I heard something...")
         self.inventorySTEAL.append(MCitems)
+        {MCinventorybefore.replace(MCinventorybefore, MCinventoryafter)}
         print (f"Inventory: \n{MCinventorybefore.replace(MCinventorybefore, MCinventoryafter)}")
         print (f"You're missing {MCitems}!!!")
         run = input ("Uh oh, do you want to run after them?")
@@ -27,4 +28,3 @@ class Bandit:
         elif self.health > 0:
             print (f"{self.name} won the battle!")
             print (f"{self.name}: I guess I'm keeping all these items!")
-    

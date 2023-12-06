@@ -1,5 +1,4 @@
 class Goblin: 
-
     def __init__(self, name, health, inventory, personality, weapon, tricks):
         self.name = name
         self.health = health
