@@ -4,7 +4,6 @@ pokedex = open("./move.json", encoding="utf8")
 ## create variable "data" that represents the enitre pokedex list
 data = json.load(pokedex)
 
-
 user_input = input("Enter a move: ")
 match_found = False
 
