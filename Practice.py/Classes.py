@@ -14,25 +14,19 @@ print(mark) """
 
 
 
-
-class GuestInfo :
-    def __init__(self, Name, Occupation, Relation_To_You, Relation_To_Mansion_owner):
-        super().__init__(Name,Occupation)
-        self.Relation_To_You = Relation_To_You
-        self.Relation_To_Mansion_owner = Relation_To_Mansion_owner
        
 
 
 
 
 class Suspicions(Guest) :
-    def __init__(self,Name,Occupation,Reason_For_Suspicion,Last_Seen_With,Relation_To_You) :
-         super().__init__(Occupation,Name,Relation_To_You)
+    def __init__(self,Name,Occupation,Reason_For_Suspicion,Last_Seen_With,Relation_To_U) :
+         super().__init__(Occupation,Name,Relation_To_U)
      
          self.Reason_For_Suspicion = Reason_For_Suspicion
          self.Last_Seen_With = Last_Seen_With
     def __str__(self):
-        return f"{self.Name},{self.Occupation},{self.Relation_To_You}"
+        return f"{self.Name},{self.Occupation},{self.Relation_To_U}"
        
 
 
@@ -46,15 +40,15 @@ class NotSuspicious(Guest) :
 
 
 Guests =[]
-SuspectList =[]
-Trusts =[]
+SuspicionS =[]
+NotSuspiciouS =[]
 
 
 
 
-def Create_Guest_Log(Name, Occupation,Relation_To_Mansion_owner):
+def Create_Guest_Log(Name, Occupation,Relation_To_U):
     Occupation = (uuid.uuid4())
-    A_Guest = Guest(Name,Occupation,Relation_To_Mansion_owner)
+    A_Guest = Guest(Name,Occupation,Relation_To_U)
     Guests.append(A_Guest)
     for Guest in Guests:
         print(Guest)
@@ -67,16 +61,16 @@ def Create_Guest_Log(Name, Occupation,Relation_To_Mansion_owner):
 def Create_Suspicions(Name,Occupation,Relation_To_Mansion_owner,Reason_For_Suspicion) :
     Occupation = (uuid.uuid4())
     Suspect = Suspicions(Name,Occupation,Relation_To_Mansion_owner,Reason_For_Suspicion)
-    SuspectList.append(Suspect)
-    for Suspect in SuspectList :
+    SuspicionS.append(Suspect)
+    for Suspect in SuspicionS :
         print(Suspect)
 
 
-def Create_Trustworthy(Name,Occupation,Relation_To_Mansion_owner,ReasonOfTrust,Befriend) :
+def Create_Trustworthy(Name,Occupation,Relation_To_U,ReasonOfTrust,Befriend) :
     Occupation = (uuid.uuid4())
-    Trust = NotSuspicious(Name,Occupation,Relation_To_Mansion_owner,ReasonOfTrust,Befriend)
-    Trusts.append(Trust)
-    for Trust in Trusts :
+    Trust = NotSuspicious(Name,Occupation,Relation_To_U,ReasonOfTrust,Befriend)
+    NotSuspiciouS.append(Trust)
+    for Trust in NotSuspiciouS :
         print(Trust)
 
 
@@ -98,11 +92,24 @@ while add_users_Guest_Log == "Y" :
     User_Request = input("Before you Input information on this character, Are you Suspicious of Him/Her?(YES or NO or UNDETERMINED)")
     if User_Request.upper() == "YES" :
         print("Classing into Suspicions file...")
-        name = input("Enter A Guest Name.")
+        Name = input("Enter A Guest Name.")
         Occupation = input("Please Enter This Guest's Occupation. (Just put a '?' If its unkown.)")
         LastSeenWith = input("Please State Where you last saw this person ")
-        RelationToU = input("What is this person's relation to you? Leave a '?' If its unkown.")
-        ReasonForSuspicion = input("Please State in 1-2 EXTREMELY short sentences your reason for suspicion.")
+        Relation_To_U = input("What is this person's relation to you? Leave a '?' If its unkown.")
+        Reason_For_Suspicion = input("Please State in 1-2 EXTREMELY short sentences your reason for suspicion.")
+
+        
+        Create_Suspicions(Name,Occupation,Relation_To_U,Reason_For_Suspicion) 
+
+    elif User_Request.upper() =="UNDETERMINED" :
+        print("Redirecting To Regular Guest Log...")
+        Name = input("Enter A Guest Name.")
+        Occupation = input("Please Enter This Guest's Occupation. (Just put a '?' If its unkown.)")
+        Relation_To_U = input("What is this person's relation to you? Leave a '?' If its unkown.")
+    
+        
+       
+        print("Here is your current guest log.")
+        print(NotSuspiciouS)
 
 
-        Create_Suspicions(name,Occupation,ReasonForSuspicion,LastSeenWith,RelationToU)
