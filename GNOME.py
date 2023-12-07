@@ -1,8 +1,7 @@
 class Forestgnome:
-    def __init__(self, name, health, personality, riddle, riddleanswer, chances, weapon):
+    def __init__(self, name, health, riddle, riddleanswer, chances, weapon):
         self.name = name
         self.health = health
-        self.personality = personality
         self.riddle = riddle
         self.riddleanswer = riddleanswer
         self.chances = chances
