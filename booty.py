@@ -13,11 +13,12 @@ with open ("move.json", "r") as f:
     data = json.load(f)
     ##Call classes in here
     id = input ("id number: ")
-    name = input ("name: ")
+    move = input ("move name: ")
     desc = input ("short desc: ")
     dmg = input ("dmg amount: ")
 
-a = moves(name,desc)
+
+a = moves(id, move, desc, dmg)
 data.append(a.__dict__)
 print (a.__dict__)
 
