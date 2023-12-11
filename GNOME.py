@@ -11,7 +11,8 @@ class Forestgnome:
         if riddle == self.riddleanswer:
             print (f"{self.name}: NOOOO!!! No one has ever answered correctly before!!")
             print (f"{self.name} has been defeated.")
-            self.health.replace(self.health, 0)
+            # self.health.remove(self.health)
+            # self.health.append(0)
         elif riddle != self.riddleanswer:
             print ("Be prepared for battle!!!")
     def battleresult(self):
