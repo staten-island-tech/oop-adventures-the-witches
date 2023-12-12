@@ -1,8 +1,6 @@
 class Maincharacter:
-    def __init__(self, name, height, power, health, strength, attackmoves, desc, inventory):
+    def __init__(self, name, health, strength, attackmoves, desc, inventory):
         self.name = name
-        self.height = height
-        self.power = power
         self.health = health
         self.strength = strength
         self.attackmoves = attackmoves
