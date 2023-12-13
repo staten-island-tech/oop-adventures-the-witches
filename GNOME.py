@@ -9,16 +9,14 @@ class Forestgnome:
     def ask(self):
         riddle = input(f"{self.name}: {self.riddle}")
         if riddle == self.riddleanswer:
-            print (f"{self.name}: NOOOO!!! No one has ever answered correctly before!!")
-            print (f"{self.name} has been defeated.")
-            # self.health.remove(self.health)
-            # self.health.append(0)
+            self.health = 0
+            return (f"{self.name}: NOOOO!!! No one has ever answered correctly before!!")
         elif riddle != self.riddleanswer:
             print ("Be prepared for battle!!!")
     def battleresult(self):
         if self.health <= 0:
             print (f"{self.name} has been defeated.")
-            print (f"{self.weapon} was dropped.")
+            return (f"{self.weapon} was dropped.")
         elif self.health > 0:
             print (f"{self.name} won the battle!")
-            print (f"{self.name}: Haha, I knew I would win!!")
+            return (f"{self.name}: Haha, I knew I would win!!")
