@@ -1,0 +1,32 @@
+[
+{"id" : 1,
+"item" : {
+    "name" : "Flashbang",
+    "description" : "Stuns the enemy, removing a turn."
+    }},
+{"id" : 2,
+"item" : {
+    "name" : "Healing Potion",
+    "description" : "Odd potion. When consumed, heal half of your current HP."
+    }},
+{"id" : 3,
+"item" : {
+    "name" : "Strength Potion",
+    "description" : "When consumed, deal 1.5x damage for the duration of the round."
+    }},
+{"id" : 4,
+"item" : {
+    "name" : "Shield Potion",
+    "description" : "When consumed, become invulnerable for 1 turn."
+    }},
+{"id" : 5,
+"item" : {
+    "name" : "Crossaint",
+    "description" : "When consumed, heal 100 HP."
+    }},
+{"id" : 6,
+"item" : {
+    "name" : "Shriveled Pepper",
+    "description" : "When consumed by the dragon, their damage is boosted 1.5x" 
+    }}
+]
