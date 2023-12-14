@@ -12,7 +12,7 @@ class Forestgnome:
             self.health = 0
             return (f"{self.name}: NOOOO!!! No one has ever answered correctly before!!")
         elif riddle != self.riddleanswer:
-            print ("Be prepared for battle!!!")
+            return ("Be prepared for battle!!!")
     def battleresult(self):
         if self.health <= 0:
             print (f"{self.name} has been defeated.")
