@@ -41,9 +41,13 @@ def Create_Towns_Log(Name, Occupation) :
 
 
 
-add_more_users = "Y"
-def check_tenure(status):
-    if status.lower() == "y":
-        return True
-    else:
-        return False
+
+    
+while add_more_users == "Y":
+    user_request = input("Welcome to your Journal log. What Will You Write About( Suspect or Townsfolk.)?")
+    if user_request.upper() == "Townsfolk":
+        Name = input("Enter Name Of Person")
+        Occupation = input("Please Enter Occupation Of TownsFolk")
+        Create_Towns_Log(Name,Occupation)        
+
+    
