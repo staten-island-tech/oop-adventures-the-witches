@@ -1,16 +1,15 @@
 class Bandit:
-    def __init__(self, name, health, personality, weapon, inventory, inventorySTEAL):
+    def __init__(self, name, health, weapon, inventory, inventorySTEAL):
         self.name = name
         self.health = health
-        self.personality = personality
         self.weapon = weapon
         self.inventorySTEAL = inventorySTEAL
         self.inventory = inventory
-    def sneaky(self, MCitems, MCinventorybefore, MCinventoryafter): #'MCinventoryafter' does not include 'MCitems'
-        print ("Whats that sound? I thought I heard something...")
+    def sneaky(self, MCname, MCitems, MCinventorybefore, MCinventoryafter): #'MCinventoryafter' does not include 'MCitems'
+        print (f"{MCname}: Whats that sound? I thought I heard something...")
         self.inventorySTEAL.append(MCitems)
-        {MCinventorybefore.replace(MCinventorybefore, MCinventoryafter)}
-        print (f"Inventory: \n{MCinventorybefore.replace(MCinventorybefore, MCinventoryafter)}")
+        MCinventorybefore = MCinventoryafter
+        print (f"Inventory: \n{MCinventorybefore}")
         print (f"You're missing {MCitems}!!!")
         run = input ("Uh oh, do you want to run after them?")
         if run == ("No"):
@@ -23,7 +22,7 @@ class Bandit:
             print (f"{self.weapon} has been dropped. ")
             print (f"You won {MCitems} back!!")
             MCinventory.append(MCitems)
-            self.inventorySTEAL.replace(self.inventorySTEAL, self.inventory)
+            self.inventorySTEAL = self.inventory
             print (f"Oh, whats this? {self.inventorySTEAL} has been dropped. ")
         elif self.health > 0:
             print (f"{self.name} won the battle!")
