@@ -1,0 +1,128 @@
+[
+{"id" : 1,
+"move" : {
+    "name" : "Cane Hit",
+    "description" : "Smacks opponent in the head using a cane",
+    "damage" : "50"
+    }},       
+{"id" : 2,
+"move" : {
+    "name" : "Triple-Hit",
+    "description" : "Three swift blows done using a cane.",
+    "damage" : "75"
+    }},
+{"id" : 3,
+"move" : {
+    "name" : "Scrape",
+    "description" : "Scratch the enemy hard, once.",
+    "damage" : "75"
+    }},
+{"id" : 4,
+"move" : {
+    "name" : "Slash",
+    "description" : "Swipe the enemy using both hands.",
+    "damage" : "100"
+    }},
+{"id" : 5,
+"move" : {
+    "name" : "Slick Stab",
+    "description" : "Cut the enemy with your knife.",
+    "damage" : "125"
+    }},
+{"id" : 6,
+"move" : {
+    "name" : "Bloody Strike",
+    "description" : "Brutally stab the enemy with your knife.",
+    "damage" : "150"
+    }},
+{"id" : 7,
+"move" : {
+    "name" : "Hardy Fist",
+    "description" : "Punch the enemy with your fist.",
+    "damage" : "200"
+    }},       
+{"id" : 8,
+"move" : {
+    "name" : "Mega Punch",
+    "description" : "Uppercut the enemy in the jaw.",
+    "damage" : "225"
+    }},
+{"id" : 9,
+"move" : {
+    "name" : "Chilling Breath",
+    "description" : "Rain a flurry of icicles from your mouth onto the enemy.",
+    "damage" : "700"
+    }},
+{"id" : 10,
+"move" : {
+    "name" : "Iced Wing",
+    "description" : "Slash the enemy with the use of cold wings.",
+    "damage" : "750"
+    }},
+{"id" : 11,
+"move" : {
+    "name" : "Wraith of Flames",
+    "description" : "Summons flames from the fiery pits.",
+    "damage" : "333"
+    }},
+{"id" : 12,
+"move" : {
+    "name" : "Wraith of Thunder",
+    "description" : "Summon bolts of thunder from the heavens.",
+    "damage" : "333"
+    }},
+{"id" : 13,
+"move" : {
+    "name" : "Wraith of Ice",
+    "description" : "Summons a quick but heavy blizzard onto the field.",
+    "damage" : "333"
+    }},
+{"id" : 14,
+"move" : {
+    "name" : "Sacred Sword",
+    "description" : "Enhances your sword for a brief moment, and strikes the enemy.",
+    "damage" : "800"
+    }},       
+{"id" : 15,
+"move" : {
+    "name" : "Gamma Pulse",
+    "description" : "A light stream erupts from your sword.",
+    "damage" : "799"
+    }},
+{"id" : 16,
+"move" : {
+    "name" : "Flamethrower",
+    "description" : "Sprays the enemy in flames.",
+    "damage" : "799"
+    }},
+{"id" : 17,
+"move" : {
+    "name" : "Fire Spin",
+    "description" : "Summons a tornado made of flames, engulfing the enemy.",
+    "damage" : "800"
+    }},
+{"id" : 18,
+"move" : {
+    "name" : "Bullet Spray",
+    "description" : "Use your entire magizine of bullets simultaneously.",
+    "damage" : "650"
+    }},
+{"id" : 19,
+"move" : {
+    "name" : "Big-Bang",
+    "description" : "Wack your enemy (cling-clonguiwefuiwbef).",
+    "damage" : "600"
+    }},
+{"id" : 20,
+"move" : {
+    "name" : "Striking Arrows",
+    "description" : "Aim 3 arrows at the enemy consecutively.",
+    "damage" : "575"
+    }},       
+{"id" : 21,
+"move" : {
+    "name" : "Wood Hammer",
+    "description" : "Bash a stick into your enemy.",
+    "damage" : "500"
+    }}
+]
