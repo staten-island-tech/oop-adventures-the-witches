@@ -5,17 +5,27 @@ class Bandit:
         self.weapon = weapon
         self.inventorySTEAL = inventorySTEAL
         self.inventory = inventory
-    def sneaky(self, MCname, MCitems, MCinventorybefore, MCinventoryafter): #'MCinventoryafter' does not include 'MCitems'
+    def sneaky(self, MCname, MCitems):
         print (f"{MCname}: Whats that sound? I thought I heard something...")
         self.inventorySTEAL.append(MCitems)
-        MCinventorybefore = MCinventoryafter
-        print (f"Inventory: \n{MCinventorybefore}")
+        MCinventory = []
+        print (f"Inventory: \n{MCinventory}")
         print (f"You're missing {MCitems}!!!")
-        run = input ("Uh oh, do you want to run after them?")
+        run = input ("Uh oh, do you want to run after them? ")
         if run == ("No"):
-            print ("Okay..you might not see those items again...")
+            return ("Okay..you might not see those items again...")
         elif run == ("Yes"):
-            print ("Be prepared for battle!")
+            return
+    def battle(self, MCname, MCinventory, items):
+        stand = input("\nYou run after the thief through the crowded, busy streets. Through the rush, you knock over someone's stand. \nDo you help? ")
+        if stand == ("Yes"):
+            print("You fix the stand, which takes more time than you thought...\nHowever, the owner, grateful for your help, hands you a bag full of items.")
+            MCinventory.append(items)
+            print("Unfortunately, it seems like the bandit got away...")
+        elif stand == ("No"):
+            woods = print("You leave the unfortunate owner scrambling to fix up the stand...\n\nYou continue running after the bandit, who goes into the woods.\nDo you continue?")
+            if woods == ("Yes"):
+                print(f"The bandit suddenly stops and you catch up.\n{MCname}")
     def battleoutcome(self, MCitems, MCinventory):
         if self.health <= 0:
             print (f"{self.name} has been defeated. ")
@@ -23,7 +33,7 @@ class Bandit:
             print (f"You won {MCitems} back!!")
             MCinventory.append(MCitems)
             self.inventorySTEAL = self.inventory
-            print (f"Oh, whats this? {self.inventorySTEAL} has been dropped. ")
+            return (f"Oh, whats this? {self.inventorySTEAL} has been dropped. ")
         elif self.health > 0:
             print (f"{self.name} won the battle!")
-            print (f"{self.name}: I guess I'm keeping all these items!")
+            return (f"{self.name}: I guess I'm keeping all these items!")

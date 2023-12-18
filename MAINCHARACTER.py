@@ -5,7 +5,6 @@ class Maincharacter:
         self.inventory = inventory
     def victory(self, items):
         print(f"Congrats, {self.name} defeated the enemy!")
-        self.inventory.append(items)
         print (f"Hooray, you gained '{items}'!")
         self.inventory.append(items)
         newhealth = self.health + 500

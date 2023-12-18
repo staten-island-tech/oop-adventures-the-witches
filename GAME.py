@@ -39,6 +39,8 @@ Start_Gnome()
 
 def Part2Bandit():
     print("As always, the small town of Crystal Cliffs is bustling and busy.\nYou wander around the middle of town, which is crowded with small shops and villagers.")
-    banditSTEAL = bandit.sneaky(mc.name, mc.inventory[-1], mc.inventory, mc.inventory[0])
+    banditSTEAL = bandit.sneaky(mc.name, mc.inventory)
     print (banditSTEAL)
+    if banditSTEAL == ("Yes"):
+        
 Part2Bandit()
