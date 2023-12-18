@@ -18,18 +18,8 @@ def Start_Gnome():
                     print (gnomeBATTLEresult)
                     mcVICTORY = mc.victory(papagnome.weapon)
                     print (mcVICTORY)
-<<<<<<< Updated upstream
-                elif papagnome.health > 0:
-                    run = input(f"{papagnome.name}: Hahahaha...I knew a lowly human like yourself would not be able to answer!\nDo you wish to run away or fight? ")
-                    if run == ("Run"):
-                        print("You run away towards Crystal Cliffs.")
-                    elif run == ("Fight"):
-                        #import moves and battle
-                        print("jaskdf")
-=======
                 # elif papagnome.health > 0:
 
->>>>>>> Stashed changes
             elif investigate == ("No"):
                 print ("You ignore the noise and continue walking.")
         elif wickery_hills == ("No"):
