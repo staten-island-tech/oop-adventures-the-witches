@@ -88,7 +88,7 @@ while add_more_users == "Y":
 
 
     else:
-        print("Soemthing went wrong, are you sure you typed the request correctly? ")
+        print("Soemthing went wrong, are you sure you typed the request correctly? Imagine not being able to spell   ")
     still_continue = input("Would you like to continue Y/N ").upper()
     if add_more_users == "N":
         break
