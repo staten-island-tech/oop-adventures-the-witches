@@ -1,30 +1,44 @@
 class Bandit:
-    def __init__(self, name, health, personality, weapon, inventory, inventorySTEAL):
+    def __init__(self, name, health, weapon, inventory, inventorySTEAL):
         self.name = name
         self.health = health
-        self.personality = personality
         self.weapon = weapon
         self.inventorySTEAL = inventorySTEAL
         self.inventory = inventory
-    def sneaky(self, MCitems, MCinventorybefore, MCinventoryafter): #'MCinventoryafter' does not include 'MCitems'
-        print ("Whats that sound? I thought I heard something...")
+    def sneaky(self, MCname, MCitems, MCinventory):
+        print (f"{MCname}: Whats that sound? I thought I heard something...")
         self.inventorySTEAL.append(MCitems)
-        {MCinventorybefore.replace(MCinventorybefore, MCinventoryafter)}
-        print (f"Inventory: \n{MCinventorybefore.replace(MCinventorybefore, MCinventoryafter)}")
-        print (f"You're missing {MCitems}!!!")
-        run = input ("Uh oh, do you want to run after them?")
+        MCinventory = []
+        print (f"Inventory: \n{MCinventory}")
+        return (f"You're missing {MCitems}!!!")
+
+    def battle(self, MCname, MCinventory, items, ):
+        run = input ("Uh oh, do you want to run after the thief? ")
         if run == ("No"):
-            print ("Okay..you might not see those items again...")
+            return ("Okay..you might not see those items again...")
         elif run == ("Yes"):
-            print ("Be prepared for battle!")
+            stand = input("\nYou run after the thief through the crowded, busy streets. Through the rush, you knock over someone's stand. \nDo you help? ")
+            if stand == ("Yes"):
+                print("You fix the stand, which takes more time than you thought...\nHowever, the owner, grateful for your help, hands you a bag full of items.")
+                MCinventory.append(items)
+                print (f"Inventory: \n{MCinventory}\nWow...who was that person?")
+                return("Unfortunately, it seems like the bandit got away...")
+            elif stand == ("No"):
+                woods = input("You leave the unfortunate owner scrambling to fix up the stand...\n\nYou continue running after the bandit, who goes into the woods.\nDo you continue? ")
+                if woods == ("Yes"):
+                    return(f"The bandit suddenly stops and you catch up.\n{MCname}: Give me my items back!!!")
+                ##import battle
+                elif woods == ("No"):
+                    return("Okay..you might not see those items again...")
+
     def battleoutcome(self, MCitems, MCinventory):
         if self.health <= 0:
             print (f"{self.name} has been defeated. ")
             print (f"{self.weapon} has been dropped. ")
             print (f"You won {MCitems} back!!")
             MCinventory.append(MCitems)
-            self.inventorySTEAL.replace(self.inventorySTEAL, self.inventory)
-            print (f"Oh, whats this? {self.inventorySTEAL} has been dropped. ")
+            self.inventorySTEAL = self.inventory
+            return (f"Oh, whats this? {self.inventorySTEAL} has been dropped. ")
         elif self.health > 0:
             print (f"{self.name} won the battle!")
-            print (f"{self.name}: I guess I'm keeping all these items!")
+            return (f"{self.name}: I guess I'm keeping all these items!")
