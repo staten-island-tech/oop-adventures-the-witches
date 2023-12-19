@@ -14,7 +14,7 @@ class Goblin:
         if self.health <= 0:
             print (f"{self.name} has been defeated. ")
             print (f"{self.weapon} has been dropped. ")
-            print (f"Oh, whats this? {self.inventoryTREASURE} has been dropped. Turns out {self.name} had stolen {MCshinyitem}!")
+            return (f"Oh, whats this? {self.inventoryTREASURE} has been dropped. Turns out {self.name} had stolen {MCshinyitem}!")
         elif self.health > 0:
             print (f"{self.name} won the battle!")
-            print (f"{self.name}: Hehehe, I knew I would win! Guess you're not getting {MCshinyitem} back!")
+            return (f"{self.name}: Hehehe, I knew I would win! Guess you're not getting {MCshinyitem} back!")

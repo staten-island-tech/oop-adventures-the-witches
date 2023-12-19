@@ -6,6 +6,7 @@ mcNAME = input("START OF WITCH COVEN ADVENTURE \nWhat is your name? ")
 papagnome = Forestgnome("Papa Forest Gnome", 250, "What is seen in the middle of March and April that can't be seen at the beginning or end of either month? ", "r", 3, "Wooden Cane")
 mc = Maincharacter(mcNAME, 1000, ["Wooden Cleaning Broom"])
 bandit = Bandit("???", 375, "Knife", [], ["Healing Potion", "Shield Potion", "Tommy Gun","Croissant"])
+jaffrey = 
 
 def Start_Gnome():
     roadsChoice = input("It was a dark stormy evening. \nAs a young maiden you have just finished work. \nTired and annoyed of the rich family you work for, you slowly head down the wet path leading up to the hill. \nYou see a sign that reads 'Left: Wickery Hills', 'Right: Crystal Cliffs'. \nWhich way do you go? ")
@@ -27,8 +28,7 @@ def Start_Gnome():
                     if run == ("Run"):
                         print("You run away towards Crystal Cliffs.")
                     elif run == ("Fight"):
-                        #import moves and battle
-                        print("jaskdf")
+                        print("jaskdf") #import moves and battle
             elif investigate == ("No"):
                 print ("You ignore the noise and continue walking.\nWait a second...\nIs that the entrance to Crystal Cliffs?\nYou really don't know your way around...")
         elif wickery_hills == ("No"):
@@ -39,8 +39,12 @@ Start_Gnome()
 
 def Part2Bandit():
     print("As always, the small town of Crystal Cliffs is bustling and busy.\nYou wander around the middle of town, which is crowded with small shops and villagers.")
-    banditSTEAL = bandit.sneaky(mc.name, mc.inventory)
+    banditSTEAL = bandit.sneaky(mc.name, mc.inventory, mc.inventory)
     print (banditSTEAL)
-    if banditSTEAL == ("Yes"):
-        
+    mc.inventory = []
+    banditBATTLE = bandit.battle(mc.name, mc.inventory, ["Sword of Light", "Shield Potion", "Crossaint", "Strength Potion", "Healing Potion"])
+    print (banditBATTLE)
 Part2Bandit()
+
+def Part3Goblin():
+    print
