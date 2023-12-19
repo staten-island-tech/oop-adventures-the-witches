@@ -26,7 +26,7 @@ print(mark)"""
 
 
 class Suspect(Townsfolks) :
-    def init__(self,id,Name,Occupation, Last_Seen) :
+    def init__(self,id,Name,Occupation, Last_Seen) : 
         super().__init__(id,Name,Occupation)
         self.Last_Seen = Last_Seen
     def __str__(self):
@@ -55,7 +55,7 @@ def Create_Towns_Log(Name, Occupation) :
 
 
 def Sussy(Name,Occupation,Last_Seen) :
-    New_Suspect = Townsfolks(id,Name,Occupation,Last_Seen)
+    New_Suspect = Suspect(id,Name,Occupation,Last_Seen)
     SuspectList.append(New_Suspect)
     for Suspect in SuspectList :
         print(Suspect)
@@ -72,14 +72,15 @@ def check_tenure(status):
    
 while add_more_users == "Y":
     user_request = input("Welcome to your Journal log. What Will You Write About( Suspect or Townsfolk.)?")
-    if user_request.upper() == "Townsfolk":
+    if user_request== "Townsfolk":
         Name = input("Enter Name Of Person")
         Occupation = input("Please Enter Occupation Of TownsFolk")
         Create_Towns_Log(Name,Occupation)        
    
    
    
-    elif user_request.upper() == "Suspect" :
+
+    elif user_request == "Suspect" :
         Name = input("Enter Name Of Person")
         Occupation = input("Please Enter Occupation Of TownsFolk")
         Last_Seen = input("Where was this person last seen?")
@@ -88,7 +89,8 @@ while add_more_users == "Y":
 
 
     else:
-        print("Soemthing went wrong, are you sure you typed the request correctly? Imagine not being able to spell   ")
-    still_continue = input("Would you like to continue Y/N ").upper()
-    if add_more_users == "N":
-        break
+        print("Soemthing went wrong, are you sure you typed the request correctly? Imagine not being able to spell   ") 
+    add_more_users = input("Would you like to continue Y/N ").upper()
+    if add_more_users == "N" :
+            break 
+    
