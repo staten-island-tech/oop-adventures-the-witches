@@ -1,5 +1,5 @@
 from ICEDRAGON import Icedragon
-dragon = Icedragon("Ice Dragon", 1000, "The dragon taunts you to fight. \nEngage in fight?")
+dragon = Icedragon("Ice Dragon", 1000, "over-protective & loyal","Enchanced Icicle", "Flashbang", "Ice")
 def StartIceDragon():
     roadsChoice = input("You hear rumbling sounds from a nearby cave. It sounds like there's a creature inside. \nWould you like to investigate?")
     if roadsChoice == "Yes":
@@ -15,11 +15,11 @@ def meeting():
         return
 ## def fight():
     ##ummmm yeah
-def friendship():
-    ally = ally.battleoutcome()
-    print(ally.battleoutcome)
-if Icedragon.health == 0:
+if Icedragon.health <= 100:
     icedragonBATTLEresult = Icedragon.battleresult()
     print (icedragonBATTLEresult)
-##  mcVICTORY = mc.victory(Icedragon.weapon) import later ahaha 
+def friendship():
+    friendship = friendship.battleoutcome
+    print(friendship.battleoutcome)
+## mcVICTORY = mc.victory(Icedragon.weapon) import later ahaha 
 ##  print (mcVICTORY) + add if mc lose
