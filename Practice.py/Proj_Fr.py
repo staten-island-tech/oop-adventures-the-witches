@@ -85,7 +85,7 @@ while add_more_users == "Y":
         Occupation = input("Please Enter Occupation Of TownsFolk")
         Last_Seen = input("Where was this person last seen?")
         n = Suspect(1,Name,Occupation,Last_Seen)
-        print(n)
+        print(n) in SuspectList
      
          
 
@@ -96,3 +96,14 @@ while add_more_users == "Y":
     if add_more_users == "N" :
             break 
     
+def Journal_check():
+ Journal =input("Welcome to your journal ! What would you like to see?(Townsfolk or Suspects)")
+
+ if Journal == "TownsFolk" :
+    print(TownsLog)
+
+ elif Journal == "Suspects" :
+    print(SuspectList)
+
+
+Journal_check()
