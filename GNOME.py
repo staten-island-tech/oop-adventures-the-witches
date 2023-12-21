@@ -7,7 +7,7 @@ class Forestgnome:
         self.chances = chances
         self.weapon = weapon
     def start(self):
-        roadsChoice = input("It was a dark stormy evening. \nAs a young maiden you have just finished work. \nTired and annoyed of the rich family you work for, you slowly head down the wet path leading up to the hill. \nYou see a sign that reads 'Left: Wickery Hills', 'Right: Crystal Cliffs'. \nWhich way do you go? ")
+        roadsChoice = input("It was a dark stormy evening. \nAs a young maiden you have just finished work. \nTired and annoyed of the rich family you work for, you slowly head down the wet path leading up to the hill. \nYou see a sign that reads 'Left: Wickery Hills', 'Right: Crystal Cliffs Village'. \nWhich way do you go? ")
         if roadsChoice == ("Left"):
             wickery_hills = input("You head up the path towards Wickery Hills. However you don't seem to remember this path. Go back? ")
             if wickery_hills == ("Yes"):
@@ -22,15 +22,15 @@ class Forestgnome:
                         print ("Be prepared for battle!!!")
                         run = input(f"{self.name}: Hahahaha...I knew a lowly human like yourself would not be able to answer!\nDo you wish to run away or fight? ")
                         if run == ("Run"):
-                            return("You run away towards Crystal Cliffs.")
+                            return("You run away towards Crystal Cliffs Village.")
                         elif run == ("Fight"):
                             return() #<--import moves and battle
                 elif investigate == ("No"):
-                    return ("You ignore the noise and continue walking.\nWait a second...\nIs that the entrance to Crystal Cliffs?\nYou really don't know your way around...")
+                    return ("You ignore the noise and continue walking.\nWait a second...\nIs that the entrance to Crystal Cliffs Village?\nYou really don't know your way around...")
             elif wickery_hills == ("No"):
-                return("You continue walking.\nHuh...you really don't remember this place...\nWait is that the entrance to Crystal Cliffs?")
+                return("You continue walking.\nHuh...you really don't remember this place...\nWait is that the entrance to Crystal Cliffs Village?")
         elif roadsChoice == ("Right"):
-            return ("You head up the path towards Crystal Cliffs.")
+            return ("You head up the path towards Crystal Cliffs Village.")
     
     def battleresult(self):
         if self.health <= 0:

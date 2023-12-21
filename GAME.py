@@ -7,7 +7,7 @@ mcNAME = input("START OF WITCH COVEN ADVENTURE \nWhat is your name? ")
 papagnome = Forestgnome("Papa Forest Gnome", 250, "What is seen in the middle of March and April that can't be seen at the beginning or end of either month? ", "r", 3, "Wooden Cane")
 mc = Maincharacter(mcNAME, 1000, ["Wooden Cleaning Broom"])
 bandit = Bandit("???", 375, "Knife", [], ["Healing Potion", "Shield Potion", "Tommy Gun","Croissant"])
-# jaffrey = Goblin("Jaffrey", 325, ["Gold Trophy"], "Claws", ""
+jaffrey = Goblin("Jaffrey", 325, ["Gold Trophy"], "Claws")
 
 def Start_Gnome():
     start = papagnome.start()
@@ -30,5 +30,5 @@ def Part2Bandit():
     print (banditBATTLE)
 Part2Bandit()
 
-# def Part3Goblin():
-#     print
+def Part3Goblin():
+    print
