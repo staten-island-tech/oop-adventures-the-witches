@@ -23,8 +23,6 @@ print(mark)"""
 
 
 
-
-
 class Suspect(Townsfolks) :
     def __init__(self,id,Name,Occupation, Last_Seen) : 
         super().__init__(id,Name,Occupation)
@@ -37,7 +35,7 @@ class Suspect(Townsfolks) :
 
 
 TownsLog =[]
-SuspectList =[]
+SuspectList = []
 
 
 
@@ -85,7 +83,8 @@ while add_more_users == "Y":
         Occupation = input("Please Enter Occupation Of TownsFolk")
         Last_Seen = input("Where was this person last seen?")
         n = Suspect(1,Name,Occupation,Last_Seen)
-        print(n) in SuspectList
+        p =SuspectList.append(n)
+        print(p)
      
          
 
@@ -103,7 +102,7 @@ def Journal_check():
     print(TownsLog)
 
  elif Journal == "Suspects" :
-    print(SuspectList)
+    print(p in SuspectList)
 
 
 Journal_check()
