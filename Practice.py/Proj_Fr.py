@@ -66,14 +66,14 @@ def check_tenure(status):
     if status.lower() == "y":
         return True
     else:
-        return False
+        return  
    
 while add_more_users == "Y":
-    user_request = input("Welcome to your Journal log. What Will You Write About( Suspect or Townsfolk.)?")
+    user_request = input("Welcome to your Journal log. What will you write about today (Suspect or Townsfolk.)?")
     if user_request== "Townsfolk":
         Name = input("Enter Name Of Person")
         Occupation = input("Please Enter Occupation Of TownsFolk")
-        Create_Towns_Log(Name,Occupation)        
+        Create_Towns_Log(Name,Occupation)  
    
    
    
@@ -83,8 +83,9 @@ while add_more_users == "Y":
         Occupation = input("Please Enter Occupation Of TownsFolk")
         Last_Seen = input("Where was this person last seen?")
         n = Suspect(1,Name,Occupation,Last_Seen)
-        p =SuspectList.append(n)
-        print(p)
+        p =SuspectList.append(Suspect(1,Name,Occupation,Last_Seen))
+        print(n)
+        
      
          
 
@@ -96,13 +97,13 @@ while add_more_users == "Y":
             break 
     
 def Journal_check():
- Journal =input("Welcome to your journal ! What would you like to see?(Townsfolk or Suspects)")
+ Journal =input("Welcome to your Journal ! What would you like to see?(Townsfolk or Suspects)")
 
  if Journal == "TownsFolk" :
     print(TownsLog)
 
  elif Journal == "Suspects" :
-    print(p in SuspectList)
+    print(SuspectList)
 
 
 Journal_check()
