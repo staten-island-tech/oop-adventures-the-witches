@@ -1,8 +1,9 @@
 class Maincharacter:
-    def __init__(self, name, health, inventory):
+    def __init__(self, name, health, inventory, friends):
         self.name = name
         self.health = health
         self.inventory = inventory
+        self.friends = friends
     def victory(self, items):
         print(f"Congrats, {self.name} defeated the enemy!")
         print (f"Hooray, you gained '{items}'!")
@@ -24,3 +25,5 @@ class Maincharacter:
         elif weapon == ("Yes"):
             self.inventory.append(items)
             return ("Item added to inventory.")
+        else:
+            return ("That is not a proper response.")

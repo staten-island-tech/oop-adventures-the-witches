@@ -25,12 +25,22 @@ class Forestgnome:
                             return("You run away towards Crystal Cliffs Village.")
                         elif run == ("Fight"):
                             return() #<--import moves and battle
+                        else:
+                            return("That is not a proper response.")
+                    else:
+                        return("That is not a proper response.")
                 elif investigate == ("No"):
                     return ("You ignore the noise and continue walking.\nWait a second...\nIs that the entrance to Crystal Cliffs Village?\nYou really don't know your way around...")
+                else:
+                    return("That is not a proper response.")
             elif wickery_hills == ("No"):
                 return("You continue walking.\nHuh...you really don't remember this place...\nWait is that the entrance to Crystal Cliffs Village?")
+            else:
+                return ("That is not a proper response.")
         elif roadsChoice == ("Right"):
             return ("You head up the path towards Crystal Cliffs Village.")
+        else:
+            return ("That is not a proper response.")
     
     def battleresult(self):
         if self.health <= 0:

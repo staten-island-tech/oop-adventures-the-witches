@@ -12,7 +12,7 @@ class Bandit:
         print (f"Inventory: \n{MCinventory}")
         return (f"You're missing {MCitems}!!!")
 
-    def battle(self, MCname, MCinventory, items, ):
+    def battle(self, MCname, MCinventory, items):
         run = input ("Uh oh, do you want to run after the thief? ")
         if run == ("No"):
             return ("Okay..you might not see those items again...")
@@ -26,10 +26,13 @@ class Bandit:
             elif stand == ("No"):
                 woods = input("You leave the unfortunate owner scrambling to fix up the stand...\n\nYou continue running after the bandit, who goes into the woods.\nDo you continue? ")
                 if woods == ("Yes"):
-                    return(f"The bandit suddenly stops and you catch up.\n{MCname}: Give me my items back!!!")
-                ##import battle
+                    print(f"The bandit suddenly stops and you catch up.\n{MCname}: Give me my items back!!!")
                 elif woods == ("No"):
                     return("Okay..you might not see those items again...")
+            else:
+                return("You did not respond to the question.")
+        else:
+            return("You did not respond to the question.")
 
     def battleoutcome(self, MCitems, MCinventory):
         if self.health <= 0:
