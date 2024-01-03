@@ -27,8 +27,16 @@ class Bandit:
                 woods = input("You leave the unfortunate owner scrambling to fix up the stand...\n\nYou continue running after the bandit, who goes into the woods.\nDo you continue? ")
                 if woods == ("Yes"):
                     print(f"The bandit suddenly stops and you catch up.\n{MCname}: Give me my items back!!!")
+                    if MCinventory == []:
+                        weapons = input("Wait...looks like you don't have any weapons...Do you still wish to fight? ")
+                        if weapons == ("Yes"):
+                            print()
+                        elif weapons == ("No"):
+                            return("Okay..you might not see those items again...")
                 elif woods == ("No"):
                     return("Okay..you might not see those items again...")
+                else:
+                    return ("You did not respond to the question.")
             else:
                 return("You did not respond to the question.")
         else:
