@@ -84,7 +84,7 @@ while add_more_users == "Y":
         Last_Seen = input("Where was this person last seen?")
         n = Suspect(1,Name,Occupation,Last_Seen)
         p =SuspectList.append(Suspect(1,Name,Occupation,Last_Seen))
-        print(n)
+        print(p) 
         
      
          
