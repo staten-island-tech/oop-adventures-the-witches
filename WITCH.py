@@ -6,6 +6,8 @@ class Witch:
         self.weapon = weapon
         self.power = power
         self.witchinventory = witchinventory
+
+
     def battleoutcome(self):
         if self.health <= 0:
             print (f"{self.name} has been defeated. ")

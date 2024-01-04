@@ -16,15 +16,20 @@
     }},
 {"id" : 4,
 "item" : {
+    "name" : "Enchanced Icicle",
+    "description" : "A gift from the ice dragon. For some reason, this icicle is extremely resistant to heat."
+    }},
+{"id" : 5,
+"item" : {
     "name" : "Frying Pan",
     "description" : "An ordinary pan used for cooking."
     }},
-{"id" : 5,
+{"id" : 6,
 "item" : {
     "name" : "Crossbow",
     "description" : "A heavy bow that deals heavy damage."
     }},
-{"id" : 6,
+{"id" : 7,
 "item" : {
     "name" : "Heavy Wooden Stick",
     "description" : "A large fallen branch from a tree." 
