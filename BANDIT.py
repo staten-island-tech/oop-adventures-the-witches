@@ -19,7 +19,7 @@ class Bandit:
         elif run == ("Yes"):
             stand = input("\nYou run after the thief through the crowded, busy streets. Through the rush, you knock over someone's stand. \nDo you help? ")
             if stand == ("Yes"):
-                print("You fix the stand, which takes more time than you thought...\nHowever, the owner, grateful for your help, hands you a bag full of items.")
+                print("You fix the stand, which takes more time than you thought...\nHowever, the owner, grateful for your help, hands you a bag with an item.")
                 MCinventory.append(items)
                 print (f"Inventory: \n{MCinventory}\nWow...who was that person?")
                 return("Unfortunately, it seems like the bandit got away...")
