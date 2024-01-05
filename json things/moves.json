@@ -109,17 +109,23 @@
     }},
 {"id" : 19,
 "move" : {
+    "name" : "Frostbite",
+    "description" : "Pierce the enemy",
+    "damage" : "625"
+    }},
+{"id" : 20,
+"move" : {
     "name" : "Big-Bang",
     "description" : "Wack your enemy (cling-clonguiwefuiwbef).",
     "damage" : "600"
     }},
-{"id" : 20,
+{"id" : 21,
 "move" : {
     "name" : "Striking Arrows",
     "description" : "Aim 3 arrows at the enemy consecutively.",
     "damage" : "575"
     }},       
-{"id" : 21,
+{"id" : 22,
 "move" : {
     "name" : "Wood Hammer",
     "description" : "Bash a stick into your enemy.",
