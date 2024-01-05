@@ -138,14 +138,8 @@ class Minigames() :
      CornerPick = input("Pick A corner (1, 2 ,3 or 4)")
      CornersAvailable = [1,2,3,4]
      Selected_Corner =random.choice(CornersAvailable)
-     for i in range(3) :
-        while CornerPick != Selected_Corner:
-            print("Round Cleared ! The Enemy Chose ", Selected_Corner)
-            
+     print(Selected_Corner)
 
-        if CornerPick == Selected_Corner:
-           print("GAME OVER. The enemy chose ", Selected_Corner, "Betterm Luck Next Time...")
-           break
   RiddleGame1()
        
 
