@@ -1,0 +1,31 @@
+word_list = [
+    "Winter",
+    "Spring",
+    "Summer",
+    "fall",
+    "Breaking",
+    "Horrid",
+    "Wingy",
+    "Whistle",
+    "Foggy",
+    "Evil",
+    "Paving",
+    "Thick",
+    "Small",
+    "Keyboard",
+    "Tree",
+    "Banding",
+    "Hairy",
+    "Sunglasses"
+    "Complicated"
+    "Cooperation"
+    "German"
+    "Father"
+    "Wage"
+    "Favorite"
+    "Help"
+    "Computer"
+    "Additional"
+    "Adress"
+    "Information"
+]

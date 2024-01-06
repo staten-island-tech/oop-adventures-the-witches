@@ -23,6 +23,8 @@ print(mark)"""
 
 
 
+
+
 class Suspect(Townsfolks) :
     def __init__(self,id,Name,Occupation, Last_Seen) : 
         super().__init__(id,Name,Occupation)
@@ -35,7 +37,7 @@ class Suspect(Townsfolks) :
 
 
 TownsLog =[]
-SuspectList = []
+SuspectList =[]
 
 
 
@@ -66,14 +68,14 @@ def check_tenure(status):
     if status.lower() == "y":
         return True
     else:
-        return  
+        return False
    
 while add_more_users == "Y":
-    user_request = input("Welcome to your Journal log. What will you write about today (Suspect or Townsfolk.)?")
+    user_request = input("Welcome to your Journal log. What Will You Write About( Suspect or Townsfolk.)?")
     if user_request== "Townsfolk":
         Name = input("Enter Name Of Person")
         Occupation = input("Please Enter Occupation Of TownsFolk")
-        Create_Towns_Log(Name,Occupation)  
+        Create_Towns_Log(Name,Occupation)        
    
    
    
@@ -83,8 +85,7 @@ while add_more_users == "Y":
         Occupation = input("Please Enter Occupation Of TownsFolk")
         Last_Seen = input("Where was this person last seen?")
         n = Suspect(1,Name,Occupation,Last_Seen)
-        p =SuspectList.append(Suspect(1,Name,Occupation,Last_Seen))
-        print(p) 
+        print(n) in SuspectList
         
      
          
@@ -97,7 +98,7 @@ while add_more_users == "Y":
             break 
     
 def Journal_check():
- Journal =input("Welcome to your Journal ! What would you like to see?(Townsfolk or Suspects)")
+ Journal =input("Welcome to your journal ! What would you like to see?(Townsfolk or Suspects)")
 
  if Journal == "TownsFolk" :
     print(TownsLog)
@@ -107,3 +108,43 @@ def Journal_check():
 
 
 Journal_check()
+
+
+
+class Minigames() :
+  
+  def NumGuess() :
+    import random
+    print("Im Thinking Of A Number Between 1 And 10. You have 3 Tries to guess !")
+    number = random.randint (1,10) 
+    
+    for chances in range(3) :
+      guess = int(input("Guess A Number!"))
+    
+      if guess == number:
+         print("You got it!The number was RIGHT!")
+         break
+      
+
+      elif guess > number:
+       print("Wrong! Try a little lOWER. ")
+
+      if guess < number :
+       print("Wrong! Try a little higher.")
+  NumGuess()
+  def RiddleGame1() :
+     import random
+     print("Welcome to four corners. You will play 3 rounds with the enemy. If you Win, you can pass. Alternatively if you loose, You die. Good luck.")
+     CornerPick = input("Pick A corner (1, 2 ,3 or 4)")
+     CornersAvailable = [1,2,3,4]
+     Selected_Corner =random.choice(CornersAvailable)
+     print(Selected_Corner)
+
+  RiddleGame1()
+       
+
+    
+
+
+
+
