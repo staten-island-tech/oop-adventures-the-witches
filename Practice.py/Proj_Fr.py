@@ -31,9 +31,6 @@ class Suspect(Townsfolks) :
         self.Last_Seen = Last_Seen
     def __str__(self):
         return f"{self.Name},{self.Occupation},{self.Last_Seen}"
-   
-
-
 
 
 TownsLog =[]
@@ -57,8 +54,7 @@ def Create_Towns_Log(Name, Occupation) :
 def Sussy(Name,Occupation,Last_Seen) :
     New_Suspect = Suspect(id,Name,Occupation,Last_Seen)
     SuspectList.append(New_Suspect)
-    for Suspect in SuspectList :
-        print(Suspect)
+   
 
 
 
@@ -85,7 +81,9 @@ while add_more_users == "Y":
         Occupation = input("Please Enter Occupation Of TownsFolk")
         Last_Seen = input("Where was this person last seen?")
         n = Suspect(1,Name,Occupation,Last_Seen)
-        print(n) in SuspectList
+        SuspectList.append(n)
+        print(SuspectList[0])
+
         
      
          

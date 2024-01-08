@@ -20,7 +20,7 @@ class Suspect(Townsfolks) :
         return f"{self.Name},{self.Occupation},{self.Last_Seen}"
        
 TownsLog =[]
-SuspectList = []
+SuspectList = [Suspect]
 
 
 
@@ -35,4 +35,43 @@ def Create_Towns_Log(Name,Occupation) :
 
 def SuperSuspicious(Name,Occupation,Last_Seen):
     New_Suspect = Suspect(id,Name,Occupation,Last_Seen)
-    
+    SuspectList.append(New_Suspect)
+    for Suspect in SuspectList :
+        print(New_Suspect)
+add_more_users = "Y"
+def check_tenure(status):
+    if status.lower() == "y":
+        return True
+    else:
+        return False
+   
+while add_more_users == "Y":
+    user_request = input("Welcome to your Journal log. What Will You Write About( Suspect or Townsfolk.)?")
+    if user_request== "Townsfolk":
+        Name = input("Enter Name Of Person")
+        Occupation = input("Please Enter Occupation Of TownsFolk")
+        Create_Towns_Log(Name,Occupation)        
+
+    elif user_request == "Suspect" :
+        Name = input("Enter Name Of Person")
+        Occupation = input("Please Enter Occupation Of TownsFolk")
+        Last_Seen = input("Where was this person last seen?")
+        n = Suspect(1,Name,Occupation,Last_Seen)
+        SuspectList.append(n)
+        print (SuspectList)
+
+    else:
+        print("Soemthing went wrong, are you sure you typed the request correctly? Imagine not being able to spell   ") 
+    add_more_users = input("Would you like to continue Y/N ").upper()
+    if add_more_users == "N" :
+         break 
+
+    def JournalCheck() :
+        JournalView = input("Welcome To Journal. What would you like to see? (Suspects of Townsfolk?)")
+        if JournalView == "Townsfolks":
+            print(TownsLog)
+        elif JournalView == "Suspects" :
+            print(SuspectList)
+        else:
+            print("Are you Sure you spelled that correctly?)")
+JournalCheck()
