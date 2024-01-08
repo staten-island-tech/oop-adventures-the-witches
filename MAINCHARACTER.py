@@ -18,3 +18,7 @@ class Maincharacter:
         if self.health < 0:
             self.health = 0
         return (f"Your new health is {self.health}")
+    def injure(self, damagepoints):
+        newhealth = self.health-damagepoints
+        self.health = newhealth
+        print (self.health)

@@ -5,6 +5,7 @@ class Bandit:
         self.weapon = weapon
         self.inventorySTEAL = inventorySTEAL
         self.inventory = inventory
+    
     def sneaky(self, MCname, MCitems, MCinventory):
         print (f"{MCname}: Whats that sound? I thought I heard something...")
         self.inventorySTEAL.append(MCitems)
