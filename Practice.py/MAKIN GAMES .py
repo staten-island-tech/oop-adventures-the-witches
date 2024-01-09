@@ -120,11 +120,11 @@ def BombDefusion() :
     import random
     print("You Currently have", chances, "Chances. Goodluck.")
 
-    while chances < 0 :
-            for i in range() :
+    while chances > 0 :
+            for i in range(3) :
                 YourWireCut = input("Which Color Wire Would You Like To Cut? RED, YELLOW, GREEN, OR BLUE?")
                 Correct_Wire = random.choice(WIRES)
-                if YourWireCut != "RED" or "YELLOW" or "GREEN" or "BLUE":
+                if YourWireCut != "RED".lower() or "YELLOW".lower() or "GREEN".lower() or "BLUE".lower():
                     print("Something went wrong. Are you sure you typed that correctly? Im gonna have to take away a chance for that one buddy.")
                     print("You have", chances, "Chances left")
                 if YourWireCut == Correct_Wire :
@@ -138,3 +138,11 @@ def BombDefusion() :
                     print("GAME OVER! You Ran out of tries.")
                     print("You have failed to defuse the bomb.")
 BombDefusion()
+
+
+def RussianRoulette() :
+    import random
+    REVOLVER = [1,2,3,4,5,6]
+    AmountOfBullets = random.choice(3)(REVOLVER)
+    print(AmountOfBullets)
+RussianRoulette()
