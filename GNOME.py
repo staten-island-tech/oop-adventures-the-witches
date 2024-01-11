@@ -13,7 +13,7 @@ class Forestgnome:
             if wickery_hills == ("Yes"):
                 investigate = input("Wait...This isn't the way I came from.... \n*Sound of leaves rustling.* \nWould you like to investigate the noise? ")
                 if investigate == ("Yes"):
-                    print("You begin to approach the bushes...")            
+                    print("You begin to approach the bushes...")
                     riddle = input(f"{self.name}: {self.riddle}")
                     if riddle == self.riddleanswer:
                         self.health = 0
@@ -24,41 +24,23 @@ class Forestgnome:
                         if run == ("Run"):
                             return("You run away towards Crystal Cliffs Village.")
                         elif run == ("Fight"):
-                            return(f"{self.name} wants to fight!")
+                            return() #<--import moves and battle
                         else:
-                            ("That is not a proper response.")
-                        weapon = input("Which weapon will you select for this battle?")
-                        if weapon == "Wooden Broom":
-                            print("Starting fight...")
-                        else:
-                            ("That is not in your inventory.")
-    def fight(self, MCname, MChealth):
-        while self.health> 0 and MChealth > 0:
-            move = (f"{MCname}, select a move: 1. Slash, 2: Scrape")
-        if move == "Slash":
-            print({self.health - 100})
-        elif move == "Strike":
-            print({self.health - 75})
-        else:
-            return("That's not a move.")
-    def turn(self, MChealth, number):
-        if number == "one":
-            print(f"The gnome uses Cane Hit! You: {MChealth - 50}HP")
-        if number == "two":
-            print(f"The gnome uses Triple-Hit! You: {MChealth - 75}HP")
-
-        elif investigate == ("No"):
-            return ("You ignore the noise and continue walking.\nWait a second...\nIs that the entrance to Crystal Cliffs Village?\nYou really don't know your way around...")
-        else:
-            return("That is not a proper response.")
-        elif wickery_hills == ("No"):
-            return("You continue walking.\nHuh...you really don't remember this place...\nWait is that the entrance to Crystal Cliffs Village?")
-        else:
-            return ("That is not a proper response.")    
-            elif roadsChoice == ("Right"):
+                            return("That is not a proper response.")
+                    else:
+                        return("That is not a proper response.")
+                elif investigate == ("No"):
+                    return ("You ignore the noise and continue walking.\nWait a second...\nIs that the entrance to Crystal Cliffs Village?\nYou really don't know your way around...")
+                else:
+                    return("That is not a proper response.")
+            elif wickery_hills == ("No"):
+                return("You continue walking.\nHuh...you really don't remember this place...\nWait is that the entrance to Crystal Cliffs Village?")
+            else:
+                return ("That is not a proper response.")
+        elif roadsChoice == ("Right"):
             return ("You head up the path towards Crystal Cliffs Village.")
         else:
-    return ("That is not a proper response.")
+            return ("That is not a proper response.")
     
     def battleresult(self):
         if self.health <= 0:
