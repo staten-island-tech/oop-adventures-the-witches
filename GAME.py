@@ -5,7 +5,7 @@ from ICEDRAGON import Icedragon
 from WITCH import Witch
 import random
 number = ["one", "two", "three"]
-selected_number = random.choice(number)
+selected_number1 = random.choice(number)
 
 mcNAME = input("START OF WITCH COVEN ADVENTURE \nWhat is your name? ")
 papagnome = Forestgnome("Papa Forest Gnome", 250, "What is seen in the middle of March and April that can't be seen at the beginning or end of either month? ", "r", 3, "Wooden Cane")
@@ -40,7 +40,9 @@ Part3IceDragon()
 def ENDWitch():
     start = witch.start()
     print (start)
-    battle = witch.battle(mc.inventory, mc.health, selected_number)
+    battle = witch.battle(mc.inventory, mc.health, selected_number1, mc.name)
     print (battle)
+    result = witch.result()
+    print (result)
     
 ENDWitch()
