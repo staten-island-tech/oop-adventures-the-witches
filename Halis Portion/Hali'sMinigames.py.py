@@ -20,7 +20,7 @@ def RiddleGame1() :
                 Rounds -=1
                 if Rounds == 0:
                     print("Well done. GAME CLEAR.")
-
+RiddleGame1()
      
 
 
@@ -137,6 +137,7 @@ def BombDefusion() :
                 if chances == 0 :
                     print("GAME OVER! You Ran out of tries.")
                     print("You have failed to defuse the bomb.")
+                    break
 BombDefusion()
 
 
