@@ -150,6 +150,7 @@ class Minigames() :
 
       if guess < number :
        print("Wrong! Try a little higher.")
+  NumGuess()
 
   def RPS() :
      print("Welcome to Rock, Paper, Scissors. Best of 3 WINS. Loser dies.")
